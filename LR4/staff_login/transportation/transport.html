@@ -1,0 +1,184 @@
+ <!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"  media="screen,projection"/>
+       <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+
+        <style>
+            .background {
+				background-color:lightseagreen;
+			}
+            .top-nav {
+                margin-top: -53px;
+                margin-left: -28px;
+                height: 250px;
+                background-color: lightseagreen;
+            }
+            .title {
+                font-family: 'Acme', sans-serif;
+                font-size: 90px;
+                text-align: center;
+                padding-top: 70px;
+            }
+			 .tabs .indicator {
+            background-color: teal;
+        }
+            .image {
+                display: block;
+                width: 131%;
+                height:-10%;
+                margin-top:-35px;
+                margin-left: -35px;
+                margin-right:-100px;
+            } 
+			h3{
+           font-family: 'Acme', sans-serif;
+            font-size: 40px;
+            color:teal;
+        }
+		h4{
+           font-family: 'Acme', sans-serif;
+            font-size: 30px;
+            color:teal;
+        }
+        </style>
+        
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	  
+    </head>
+
+    <body>
+
+            <ul id="slide-out" class="side-nav fixed z-depth-4">
+                    <li><div class="user-view">
+                      <div class="background">
+                      </div>
+                      <a href="#!user">
+                         <img class="image" src="images/transport2.jpg">
+                      </a>
+                      
+                    </div></li>
+                    <li><a href="../Home.php"><i class="material-icons">home</i>HOME</a></li>
+                    <li><div class="divider"></div></li>
+                    <li><a class="waves-effect" href="../collection/collection.html"><i class="material-icons">collections</i>COLLECTION</a></li>
+                    <li><a class="waves-effect" href="../segregation/segregation.htm"><i class="material-icons">developer_board</i>SEGREGATION</a></li>
+                    <li><a class="waves-effect" href="transport.html"><i class="material-icons">local_shipping</i>TRANSPORT</a></li>
+                    <li><a class="waves-effect" href="../disposal/disposal.html"><i class="material-icons">delete_sweep</i>DISPOSAL</a></li>
+                    <li><div class="divider"></div></li>
+                    <li><a class="waves-effect" href="logout.php"><i class="material-icons">account_circle</i>LOGOUT</a></li>
+                  </ul>
+                  <a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="material-icons">menu</i></a>         
+                  <div class="row">
+                        <div class="col s3"></div>
+                        <div class="col s9">
+                                <nav class="top-nav z-depth-4">
+                                        <div class="container">
+                                          <div class="nav-wrapper"><a class="page-title">
+                                            <h2 class="title">
+                                               <div class="text">TRANSPORT</div>
+                                            </h2>      
+                                           </a>
+                                          </div>
+                                        </div>
+                                </nav>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col s3"></div>
+                            <div class="col s9">
+                                    <div class="row">
+                                            <form class="col s12" action="transport.php" method="POST" name="form1">
+                                              <div class="row">
+                                                <div class="input-field col s9">
+                                                  <i class="material-icons prefix medium">access_time</i>
+                                                  <input name="date1" type="text" class="datepicker">
+                                                  <label for="date1">Date</label>
+                                                </div>
+                                              </div>
+                                    </div>
+                                  <h3>Company Details</h3><br>
+                                  
+                                          <div class="row">
+                                            <div class="input-field col s12">
+                                              <i class="material-icons prefix medium">business</i>
+                                              <input id="company_name" name="company_name" type="text" class="validate">
+                                              <label for="company_name">Company Name</label>
+                                            </div>
+                                          </div>
+
+                                          <div class="row">
+                                              <div class="input-field col s12">
+                                                    <i class="material-icons prefix medium">border_color</i>
+                                                    <textarea id="textarea1" name="address" class  ="materialize-textarea"></textarea>
+                                                    <label for="textarea1">Address</label>
+                                              </div>
+                                            </div>
+                                  
+                                              <div class="row">
+                                                  <div class="input-field col s12">
+                                                     <i class="material-icons prefix medium">insert_chart</i>
+                                                      <input id="waste" name="waste" type="text" class="validate">
+                                                    <label for="waste">Waste Types</label>
+                                                  </div>
+                                              </div>
+
+                                              <div class="row">
+                                                  <div class="input-field col s12">
+                                                    <i class="material-icons prefix medium">shopping_basket</i>
+                                                    <input id="weight" name="weight" type="text" class="validate">
+                                                    <label for="weight">Weight</label>
+                                                  </div>
+                                              </div>
+      
+			                  					<h4>Driver Details</h4><br>
+                                
+                                    <div class="row">
+                                        <div class="row">
+                                          <div class="input-field col s6">
+                                              <i class="material-icons prefix medium">person</i>
+                                            <input type="text" name="driver_name" class="validate">
+                                            <label for="driver_name">Driver Name</label>
+                                          </div>
+                                          <div class="input-field col s6">
+                                              <i class="material-icons prefix medium">call</i>
+                                            <input id="contact_no"  name="contact_no"type="text" class="validate">
+                                            <label for="contact_no">Contact No.</label>
+                                          </div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="input-field col s6">
+                                             <i class="material-icons prefix medium">contact_phone</i>
+                                            <input id="licence_no" name="licence_no" type="text" class="validate">
+                                            <label for="licence_no">Licence No.</label>
+                                          </div>
+                                  
+                                          <div class="input-field col s6">
+                                             <i class="material-icons prefix medium">airport_shuttle</i>
+                                             <input id="vehicle_no" name="vehicle_no" type="text" class="validate">
+                                              <label for="vehicle_no">Vehicle No.</label>
+                                          </div>
+                                        </div>
+                                             <button class="btn waves-effect waves-light btn-large" type="submit" name="submit">Submit
+                                                    <i class="material-icons right">send</i>
+                                              </button>
+                                    </div>
+                                  </form>
+                            </div>
+                    </div>
+						    
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    </body>
+    <script>
+         $(".button-collapse").sideNav();
+        
+         $('.datepicker').pickadate({ selectMonths: true, // Creates a dropdown to control month selectYears: 15, // Creates a dropdown of 15 years to control year, today: 'Today', clear: 'Clear', close: 'Ok', closeOnSelect: false // Close upon selecting a date,
+          });
+    </script>
+  </html>

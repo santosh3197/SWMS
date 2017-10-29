@@ -1,0 +1,136 @@
+/*CSS style sheet register.php*/
+
+body{
+    background-size: cover;
+    background-image: url(../imgs/mountain.jpg);
+    margin-top: 50px;
+    font-family: sans-serif;
+   
+}
+
+
+#main-wrapper{
+	
+    width:500px;
+    margin: 0 auto;
+	background:white;
+	padding:5px;
+	opacity: 0.8;
+    background-color:#212121;
+    color:white;
+    border-radius: 8px;
+    padding-left: 47px;
+    margin-left: -20px
+
+    
+    
+  
+}
+.avatar{
+	
+	width:150px;
+	text-align:center;
+    border: none; 
+        margin-left:-20px; 
+}
+
+.myform{
+	width:500px;
+	margin:0 auto;
+    
+ 
+
+    
+}
+
+.inputvalues{
+	width:450px;
+	margin:5px auto;
+	padding:5px;
+    background-color: #424242 ;
+    height: 30px;
+    border: none;  
+    text-decoration-color: white;
+     color: white;
+    margin-left: 10px auto;
+     border-radius: 8px;
+}
+
+.inputvalues:focus{
+    color: white;
+}
+.radiobtns{
+	margin: 10px;
+}
+.selectbox{
+margin: 10px;
+ 
+}
+
+#login_btn{
+	margin-top:20px;
+	background-color:#2196f3;
+	padding:5px;
+	color:white;
+	width:100%;
+	text-align:center;
+	font-size:18px;
+	font-weight:bold;
+     border: none;
+    border-radius: 8px;
+}
+
+#register_btn{
+	margin-bottom:20px;
+	margin-top:20px;
+	background-color:#f44336 ;
+	padding:5px;
+	color:white;
+	width:100%;
+	text-align:center;
+	font-size:18px;
+	font-weight:bold;
+     border: none;
+    border-radius: 8px;
+}
+
+#signup_btn{
+	margin-top:20px;
+	background-color:#3498db;
+	padding:5px;
+	color:white;
+	width:92%;
+	text-align:center;
+	font-size:18px;
+	font-weight:bold;
+     border: none;
+    border-radius: 8px;
+
+}
+
+#back_btn{
+	margin-top:20px;
+	background-color:#e74c3c;
+	padding:5px;
+	color:white;
+	width:92%;
+	text-align:center;
+	font-size:18px;
+	font-weight:bold;
+     border: none;
+    border-radius: 8px;
+        margin-right: 35px;
+}
+#logout_btn{
+	margin-top:10px;
+	background-color:#c0392b;
+	padding:5px;
+	color:white;
+	width:100%;
+	text-align:center;
+	font-size:18px;
+	font-weight:bold;
+	margin-bottom:20px;
+     border: none;
+    border-radius: 8px;
+}

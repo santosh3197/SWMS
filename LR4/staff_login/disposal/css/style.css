@@ -1,0 +1,151 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+    overflow-x: hidden;
+}
+
+.v-header {
+    height: 100vh;
+    display:flex;
+    align-items: center;
+    color: #fff;
+}
+
+.contain {
+   max-width: 960px;
+   padding-left: 1rem;
+   padding-right: 1rem;
+   margin: auto;
+   text-align: center; 
+}
+
+.fullscreen-image-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.fullscreen-image-wrap img {
+    min-width: 100%;
+    min-height: 100%;
+    background-size: cover;
+}
+
+.header-overlay {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #225470;
+    z-index: 1;
+    opacity: 0.85;
+}
+
+.header-content{
+    z-index: 2;
+    font-size: 20px;
+}
+
+.hero {
+    font-family: 'Acme', sans-serif;
+    font-size: 95px;
+    margin-top:0px;
+}
+
+.hero1 {
+    font-family: 'Acme', sans-serif;
+    font-size: 20px;
+    color: #4CF10B;
+}
+
+.header-content span {
+    color: #71F009;
+}
+
+.ima1 {
+    height: 250px;
+    width: 250px;
+    border-radius: 18px;
+    padding-right: 0px;
+   
+}
+
+.ima4 {
+    height: 300px;
+    width: 300px;
+    border-radius: 18px;
+    padding-right:50px;
+}
+
+.hero2 {
+    font-family: 'Acme', sans-serif;
+}
+
+.sh {
+    padding-left: 530px;
+}
+
+/*Image card
+<style>
+.demo-card-image.mdl-card {
+  width: 256px;
+  height: 256px;
+  background: url('../assets/demos/image_card.jpg') center / cover;
+}
+.demo-card-image > .mdl-card__actions {
+  height: 52px;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.2);
+}
+.demo-card-image__filename {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+}*/
+
+.ima3 {
+    height: 300px;
+    width: 300px;
+    border-radius: 18px;
+    padding-left: 50px;
+   
+}
+
+.align1 {
+    padding-left: 90px;
+}
+
+.align2 {
+    padding-left: 40px;
+}
+
+/*footer
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }*/
+
+  p {
+      font-size: 25px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.2;
+  }
+  .but {
+      padding-top: 20px;
+  }
