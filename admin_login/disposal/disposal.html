@@ -1,0 +1,159 @@
+ <!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"  media="screen,projection"/>
+       <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+        <style>
+            .background {
+				background-color:lightseagreen;
+			}
+            .top-nav {
+                margin-top: -53px;
+                margin-left: -28px;
+                height: 250px;
+                background-color: lightseagreen;
+            }
+            .title {
+                font-family: 'Acme', sans-serif;
+                font-size: 90px;
+                text-align: center;
+                padding-top: 70px
+            }
+            h3{
+           font-family: 'Acme', sans-serif;
+            font-size: 40px;
+            color:teal;
+        }
+            .image {
+                display: block;
+                width: 130%;
+                height:-10%;
+                margin-top:-35px;
+                margin-left: -35px;
+                margin-right:-100px;
+            } 
+        </style>
+        
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	  
+    </head>
+
+    <body>
+
+            <ul id="slide-out" class="side-nav fixed z-depth-4">
+                    <li><div class="user-view">
+                      <div class="background">
+                      </div>
+                      <a href="#!user">
+                         <img class="image" src="images/disposal1.jpg">
+                      </a>
+                    </div></li>
+                    <li><a class="waves-effect" href="Home.php"><i class="material-icons">home</i>HOME</a></li>
+                    <li><div class="divider"></div></li>
+                    <li><a class="waves-effect" href="collection/collection.html"><i class="material-icons">collections</i>COLLECTION</a></li>
+                    <li><a class="waves-effect" href="segregation/segregation.htm"><i class="material-icons">developer_board</i>SEGREGATION</a></li>
+                    <li><a class="waves-effect" href="transportation/transport.html"><i class="material-icons">local_shipping</i>TRANSPORT</a></li>
+                    <li><a class="waves-effect" href="disposal/disposal.html"><i class="material-icons">delete_sweep</i>DISPOSAL</a></li>
+                    <li><div class="divider"></div></li>
+                    <li><a class="waves-effect" href="logout.php"><i class="material-icons">account_circle</i>LOGOUT</a></li>
+                  </ul>
+                  <a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="material-icons">menu</i></a>
+                     
+                  <div class="row">
+                        <div class="col s3"></div>
+                        <div class="col s9">
+                                <nav class="top-nav z-depth-4">
+                                        <div class="container">
+                                          <div class="nav-wrapper"><a class="page-title">
+                                            <h2 class="title">
+                                               <div class="text">DISPOSAL</div>
+                                            </h2>      
+                                           </a></div>
+                                        </div>
+                                </nav>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                            <div class="col s3"></div>
+                            <div class="col s9">
+                                    <div class="row">
+                                        <h3>Information</h3>
+                                           
+                                        
+                                        <form class="col s12" method="POST"action="disposal.php">
+                                              <div class="row">
+                                                <div class="input-field col s6">
+                                                    <i class="material-icons prefix medium">access_time</i>
+                                                  <input  type="text" class="datepicker" name="date1">
+                                                  <label for="date">Date</label>
+                                                </div>
+                                               
+                                                <div class="input-field col s6">
+                                                    <i class="material-icons prefix medium">business</i>
+                                                  <input id="city"  type="text" class="validate" name="city">
+                                                  <label for="city">City</label>
+                                                </div>
+                                              </div>
+                                              
+                                              <div class="row">
+                                                <div class="input-field col s12">
+                                                   <i class="material-icons prefix medium">insert_chart</i>
+                                                   <input id="source" type="text" class="validate" name="source">
+                                                  <label for="source">Waste Types</label>
+                                                </div>
+                                              </div>
+                                              
+                                              <div class="row">
+                                                <div class="input-field col s12">
+                                                   <i class="material-icons prefix medium">edit_location</i>
+                                                  <input id="loc" type="text" class="validate" name="area">
+                                                  <label for="loc">Dump Area</label>
+                                                </div>
+                                              </div>
+                                              <div class="row">
+                                                <div class="input-field col s12">
+                                                   <i class="material-icons prefix medium">shopping_basket</i>
+                                                  <input id="weight"  type="text" class="validate" name="weight" >
+                                                  <label for="weight">Weight</label>
+                                                </div>
+                                              </div>
+                                                <div class="row">
+                                                    
+                                                      <div class="row">
+                                                        <div class="input-field col s12">
+                                                            <i class="material-icons prefix medium">mode_comment</i>
+                                                          <textarea id="textarea1" class="materialize-textarea" name="bookmark"></textarea>
+                                                          <label for="textarea1">Any Bookmarks</label>
+                                                        </div>
+                                                      </div>
+                                                    
+                                                  </div>
+                                                  
+                                                  <button name="submit"  class="btn waves-effect waves-light btn-large" >Submit
+                                                    <i class="material-icons right">send</i>
+                                                    </button>
+                                                                                    
+                                            </form>
+                                          </div>                      
+                            </div>
+                        </div>	    
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    </body>
+    <script>
+         $(".button-collapse").sideNav();
+        
+        $('.datepicker').pickadate({ selectMonths: true, // Creates a dropdown to control month selectYears: 15, // Creates a dropdown of 15 years to control year, today: 'Today', clear: 'Clear', close: 'Ok', closeOnSelect: false // Close upon selecting a date,
+        });
+
+        $(document).ready(function() {
+        $('select').material_select();
+        });    
+    </script>
+  </html>
